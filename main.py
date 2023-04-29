@@ -18,9 +18,8 @@ if __name__ == '__main__':
     """Read the file and return a list of sentences with no new line characters."""
     args = get_arguments()
     path = get_file_path(args)
-    print(path)
     sentences = read_file(path) # get the arguments from the command line
     pattern = get_pattern(sentences) # get a list of all possible substrings of the pattern
     find_pattern(pattern, sentences[ : -1]) # find the pattern in the sentences less the last entry which is the actual pattern
-def 
+
 
