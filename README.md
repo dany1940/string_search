@@ -29,11 +29,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;The project has one branch Master.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;1.Master branch has 1 package: string_search<br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;2.Inside this package you have the following python files: main.py, pattern.py, arguments.py, read_file.py, test.txt file and a  shell script file: solution <br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;4.Read the coments on the top of each file for details on the code functionality <br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;3.Read the coments on the top of each file for details on the code functionality <br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;4.The code uses only build in packages such as Path, re and argparse and is written in python and assume that you are ussing a UNIX / Linux enviroment <br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;4.You need to command 'cd' to change directory The code is runned from inside the folder string_search hence in this case the command would be 'cd string_search' <br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;4.You need to give the file 'solution' executable permisions, mainly using the command 'chmod 755' or similar<br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;5.The code is runned using defaults cli rguments implemented with argparse and using the command './solution path'  where path is the path of the file<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;5.You need to command 'cd' to change directory The code is runned from inside the folder string_search hence in this case the command would be 'cd string_search' <br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;6.You need to give the file 'solution' executable permisions, mainly using the command 'chmod 755' or similar<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;7.The code is runned using defaults cli rguments implemented with argparse and using the command './solution path'  where path is the path of the file<br /> 
 
 
            
