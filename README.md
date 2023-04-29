@@ -12,7 +12,7 @@
 
   #### Introduction
 
-&nbsp;&nbsp;&nbsp;&nbsp;The project aims to find patterns in a file based on the last line in the file beeing the word pattern.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;The project aims to find patterns in a file based on the last line in the file beeing the pattern, a single word.<br />
 
 
  #### Thechnologies
