@@ -12,13 +12,18 @@ def get_pattern(sentence):
 
 def find_pattern(pattern, sentences):
     """Find the pattern in the sentences."""
-    sentence = ("[{0}]".format(
-                       ''.join(map(str, sentences))))
+    result = []
     for sentence in sentences:
-            if re.search(pattern, sentence):
-                print (("[{0}]".format(
+        if  re.search(pattern, sentence):
+             result.append(("[{0}]".format(
                        ''.join(map(str, sentence)))))
-            else:
-                print("No match found!")
-                raise SystemExit(1)
+    if  not result:
+        print("The pattern is not found!")
+    else:
+        print("The pattern is found in the following sentences:")
+        for sentence in result:
+            print(sentence)
+
+
+
 

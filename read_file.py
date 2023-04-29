@@ -1,5 +1,4 @@
 import re
-import os
 
 
 
@@ -10,8 +9,7 @@ def read_file(file_path):
      #pasing the arguments to the parser
     sentences = []
     try:
-       for path in file_path:
-          with open(path, 'r') as file:
+          with open(file_path, 'r') as file:
             lines = file.read().splitlines()
             for sentence in lines:
                 sentence =  re.sub('[^A-Za-z]+', ' ', sentence)
