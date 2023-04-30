@@ -13,6 +13,7 @@ class Pattern:
     def __get_pattern(self, sentence):
         """get a list of all possible substrings of the pattern"""
         pattern = sentence[-1]
+
         if pattern == "\n":
             print("The pattern is empty!")
             raise SystemExit(1)

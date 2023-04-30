@@ -44,14 +44,22 @@ class File:
                     sentence = sentence.replace("\t", "")
                     if sentence:
                         sentences.append(sentence)
-        except IndexError:
-            print("The index is out of range!")
-            raise SystemExit(1)
+
         except FileNotFoundError:
             print("The file does not exist!")
             raise SystemExit(1)
         except PermissionError:
             print("You do not have permission to access this file!")
+            raise SystemExit(1)
+        if not sentences:
+            print("The file is empty!")
+            raise SystemExit(1)
+        if len(max(sentences[ : -1], key=len)) < len(sentences[-1]):
+            print(f"The pattern '{sentences[-1]}' of lenght {len(sentences[-1])} is too long and will not be found in the sentences\n"
+                  "hence no additional search will be performed.")
+            raise SystemExit(1)
+        if max(sentences[ : -1]) == len(sentences[-1]):
+            print(f"The pattern {sentences[-1]} is too long and will not be found in the sentences!")
             raise SystemExit(1)
         return sentences
 
