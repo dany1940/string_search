@@ -4,6 +4,7 @@ from get_file_path import File
 
 class Pattern:
     """Get the pattern from the command line."""
+
     def __init__(self):
         self.sentence = File()
         self.pattern = self.__get_pattern(self.sentence)
@@ -18,8 +19,6 @@ class Pattern:
         else:
             return pattern
 
-
-
     def __find_pattern(self):
         """Find the pattern in the sentences."""
         """Strip the new line character from the pattern."""
@@ -27,12 +26,11 @@ class Pattern:
         """Removes the tabs and the new line characters from the sentences."""
         result = []
         pattern = self.pattern
-        sentences = self.sentence[ : -1]
+        sentences = self.sentence[:-1]
         for sentence in sentences:
-            if  re.search(pattern, sentence, re.IGNORECASE):
-                result.append(("[{0}]".format(
-                        ''.join(map(str, sentence)))))
-        if  not result:
+            if re.search(pattern, sentence, re.IGNORECASE):
+                result.append(("[{0}]".format("".join(map(str, sentence)))))
+        if not result:
             print("The pattern is not found!")
         else:
             print("The pattern is found in the following sentences:")
@@ -44,7 +42,3 @@ class Pattern:
         """Get the pattern from the command line."""
         solution = Pattern().__find_pattern()
         return solution
-
-
-
-
