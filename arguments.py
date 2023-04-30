@@ -9,7 +9,7 @@ class Arguments:
             dest="D",
             nargs="?",
             type=str,
-            default="../string_search/test.txt",
+            default="",
             help="Need to specify a directory to read the files from",
         )
         args = parser.parse_args()

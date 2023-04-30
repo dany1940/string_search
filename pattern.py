@@ -1,6 +1,6 @@
 import re
 from get_file_path import File
-
+from exceptions import MissingPatternException
 
 class Pattern:
     """Get the pattern from the command line."""
@@ -15,8 +15,8 @@ class Pattern:
         pattern = sentence[-1]
 
         if pattern == "\n":
-            print("The pattern is empty!")
-            raise SystemExit(1)
+            print("The pattern is a tab, it will be removed!")
+            raise MissingPatternException(self.find_pattern)
         else:
             return pattern
 
