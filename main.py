@@ -1,7 +1,10 @@
 #!/usr/bin/env solution
-from pattern import Pattern
+from read_result import File
 
 
 if __name__ == "__main__":
-    """Main function. Here the program starts."""
-    Pattern()
+    """__name__ is a built-in variable which
+    evaluates to the name of the current module."""
+    """If the source file is executed as the main program,
+    the interpreter sets the __name__ variable to have a value “__main__”."""
+    File()

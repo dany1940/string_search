@@ -25,19 +25,23 @@ class WronFileExtensionException(Exception):
     SystemExit(1)
     pass
 
+
 class MissingPatternException(Exception):
     """Raised when the pattern is missing"""
 
     SystemExit(1)
     pass
+
+
 class EmptyPathException(Exception):
     """Raised when the file is empty"""
 
     SystemExit(1)
     pass
+
+
 class EmptyFileException(Exception):
     """Raised when the file is empty"""
 
     SystemExit(1)
     pass
-

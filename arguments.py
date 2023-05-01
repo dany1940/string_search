@@ -2,8 +2,14 @@ import argparse
 
 
 class Arguments:
+    """Get the arguments from the command line."""
+
     def __arguments(self):
-        """Get the arguments from the command line."""
+        """Get the arguments from the command line.
+
+        Returns:
+            args: the arguments from the command line
+        """
         parser = argparse.ArgumentParser(description="Find patterns in a txt file")
         parser.add_argument(
             dest="D",
@@ -18,6 +24,10 @@ class Arguments:
 
     @staticmethod
     def get_arguments():
-        """Get the arguments from the command line."""
+        """Get the arguments from the command line.
+
+        Returns:
+            args: the arguments from the command line
+        """
         args = Arguments().__arguments()
         return args
